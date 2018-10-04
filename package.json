@@ -1,0 +1,41 @@
+{
+	"name": "server-parcel",
+	"version": "1.0.0",
+	"description": "server parcelpintar",
+	"main": "index.js",
+	"scripts": {
+		"test": "nyc mocha --exit",
+		"coverage": "nyc --reporter=text-lcov npm test",
+		"start": "node app.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ParcelPintar/server-parcel.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/ParcelPintar/server-parcel/issues"
+	},
+	"homepage": "https://github.com/ParcelPintar/server-parcel#readme",
+	"dependencies": {
+		"axios": "^0.18.0",
+		"bcryptjs": "^2.4.3",
+		"cors": "^2.8.4",
+		"dotenv": "^6.0.0",
+		"express": "^4.16.3",
+		"firebase": "^5.5.1",
+		"firebase-admin": "^6.0.0",
+		"jsonwebtoken": "^8.3.0",
+		"mongoose": "^5.2.15",
+		"morgan": "^1.9.1"
+	},
+	"devDependencies": {
+		"chai": "^4.1.2",
+		"chai-http": "^4.2.0",
+		"chai-match": "^1.1.1",
+		"coveralls": "^3.0.2",
+		"mocha": "^5.2.0",
+		"nyc": "^13.0.1"
+	}
+}
